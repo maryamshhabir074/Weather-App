@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap link/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+
+</head>
+<body>
+    <div class="weather-card">
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="weather-icon" id="weatherIcon">
+      <i class="fa-solid fa-sun"></i>
+    </div>
+    <div class="weather-img" id="weatherImage"></div>
+    <h2 id="temp">--°C</h2>
+    <h4 id="cityName">--</h4>
+    <div class="weather-stats">
+      <div>
+        <i class="fa-solid fa-water"></i> <span id="humidity">--</span>% <br/>
+        <span style="font-size:12px;">Humidity</span>
+      </div>
+      <div>
+        <i class="fa-solid fa-wind"></i> <span id="wind">--</span> km/h<br/>
+        <span style="font-size:12px;">Wind Speed</span>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    <script src="./bootstrap link/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>
